@@ -49,7 +49,7 @@ open class DefaultNetworkService: NetworkService {
     }
 
     public init(sessionManager: SessionManager) {
-        super.init(sessionManager: sessionManager, acceptableStatusCodes: acceptableStatusCodes)
+        super.init(sessionManager: sessionManager, acceptableStatusCodes: Alamofire.SessionManager.defaultAcceptableStatusCodes)
 
         // Fatal error: `drive*` family of methods can be only called from `MainThread`
         DispatchQueue.main.async {

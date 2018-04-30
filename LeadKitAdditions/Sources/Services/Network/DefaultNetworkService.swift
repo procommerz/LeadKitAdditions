@@ -24,6 +24,7 @@ import Alamofire
 import LeadKit
 import RxSwift
 
+@available(*, deprecated, message: "Use NetworkService from LeadKit.")
 /// Default implementation of network service, which trust any server and use default timeout interval
 open class DefaultNetworkService: NetworkService {
 
@@ -33,52 +34,13 @@ open class DefaultNetworkService: NetworkService {
 
     private let disposeBag = DisposeBag()
 
-    /// Override to set base server url
-    open class var baseUrl: String {
-        fatalError("You should override this var: baseUrl")
-    }
-
-    /// Override to change timeout interval default value
-    open class var defaultTimeoutInterval: TimeInterval {
-        return 20.0
-    }
-
-    /// The default acceptable range 200…299
-    open var acceptableStatusCodes: [Int] {
-        return Alamofire.SessionManager.defaultAcceptableStatusCodes
-    }
-
-    public init(sessionManager: SessionManager) {
-        super.init(sessionManager: sessionManager, acceptableStatusCodes: Alamofire.SessionManager.defaultAcceptableStatusCodes)
+    public init(configuration: NetworkServiceConfiguration) {
+        super.init(configuration: configuration)
 
         // Fatal error: `drive*` family of methods can be only called from `MainThread`
         DispatchQueue.main.async {
             self.activityIndicatorBinding()?.disposed(by: self.disposeBag)
         }
-    }
-
-    // MARK: - Default Values
-
-    /// Override to change server trust policies
-    open class var serverTrustPolicies: [String: ServerTrustPolicy] {
-        return [
-            baseUrl: .disableEvaluation
-        ]
-    }
-
-    /// Override to change default urlSession configuration
-    open class var configuration: URLSessionConfiguration {
-        let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = defaultTimeoutInterval
-
-        return configuration
-    }
-
-    /// Override to configure alamofire session manager
-    open class var sessionManager: SessionManager {
-        let sessionManager = SessionManager(configuration: configuration,
-                                            serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies))
-        return sessionManager
     }
 
 }

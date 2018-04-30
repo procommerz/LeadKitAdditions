@@ -40,12 +40,12 @@ open class DefaultNetworkService: NetworkService {
 
     /// Override to change timeout interval default value
     open class var defaultTimeoutInterval: TimeInterval {
-        return 20.0
+        return 60.0
     }
 
     /// The default acceptable range 200…299
     open class var acceptableStatusCodes: [Int] {
-        return Alamofire.SessionManager.defaultAcceptableStatusCodes
+        return Alamofire.SessionManager.defaultAcceptableStatusCodes + [422, 500]
     }
 
     public init(sessionManager: SessionManager) {

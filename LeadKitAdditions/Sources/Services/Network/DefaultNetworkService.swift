@@ -40,7 +40,7 @@ open class DefaultNetworkService: NetworkService {
 
     /// Override to change timeout interval default value
     open class var defaultTimeoutInterval: TimeInterval {
-        return 60.0
+        return 20.0
     }
 
     /// The default acceptable range 200…299

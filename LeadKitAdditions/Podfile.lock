@@ -6,17 +6,17 @@ PODS:
   - IDZSwiftCommonCrypto (0.10.0)
   - InputMask (3.0.0)
   - KeychainAccess (3.1.0)
-  - LeadKit (0.6.7):
-    - LeadKit/Core (= 0.6.7)
-  - LeadKit/Core (0.6.7):
+  - LeadKit (10.0.0):
+    - LeadKit/Core (= 10.0.0)
+  - LeadKit/Core (10.0.0):
     - CocoaLumberjack/Swift (~> 3.3.0)
-    - ObjectMapper (~> 3.0.0)
+    - ObjectMapper
     - RxAlamofire (= 4.0.0)
     - RxCocoa (= 4.0.0)
     - RxSwift (= 4.0.0)
     - TableKit (~> 2.5.0)
     - UIScrollView-InfiniteScroll (~> 1.0.0)
-  - ObjectMapper (3.0.0)
+  - ObjectMapper (3.3.0)
   - RxAlamofire (4.0.0):
     - RxAlamofire/Core (= 4.0.0)
   - RxAlamofire/Core (4.0.0):
@@ -59,7 +59,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   LeadKit:
-    :commit: 3e1f059a7a2b17a9822edb36bd8bb70d927ee523
+    :commit: 42896331f07206d21489b55a625727fe350886ed
     :git: https://github.com/procommerz/LeadKit
 
 SPEC CHECKSUMS:
@@ -68,8 +68,8 @@ SPEC CHECKSUMS:
   IDZSwiftCommonCrypto: 4eef2c46e262dfbcbc1fd76365e066336680ad7d
   InputMask: 8b5c42acac19cd48fe664b739f30995103b75e75
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
-  LeadKit: 55cb5847601ca9b1f2d10739b16e3320d76b8a2e
-  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
+  LeadKit: 0cd2945f55cdd19977d2b167beb23454169f9269
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   RxAlamofire: 6ea579ac53bf14cb4bc7049a3866e5a769989b1d
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334

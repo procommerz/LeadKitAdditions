@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
       "LeadKitAdditions/Sources/Services/Network/DefaultNetworkService+ActivityIndicator+Extension.swift",
     ]
 
-    ss.dependency { :git => "https://github.com/procommerz/LeadKit", :tag => '10.0.0' }
+    ss.dependency "LeadKit", '10.0.0'
     ss.dependency "KeychainAccess", '3.1.0'
     ss.dependency "IDZSwiftCommonCrypto", '0.9.1'
     ss.dependency "InputMask", '3.0.0'
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
       "LeadKitAdditions/Sources/Services/Network/DefaultNetworkService+ActivityIndicator.swift",
     ]
 
-    ss.dependency { :git => "https://github.com/procommerz/LeadKit", :tag => '10.0.0' }
+    ss.dependency "LeadKit/Core-iOS-Extension", '10.0.0'
     ss.dependency "KeychainAccess", '3.1.0'
     ss.dependency "IDZSwiftCommonCrypto", '0.9.1'
     ss.dependency "InputMask", '3.0.0'

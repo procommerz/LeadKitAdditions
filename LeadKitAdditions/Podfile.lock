@@ -1,14 +1,14 @@
 PODS:
-  - Alamofire (4.5.1)
+  - Alamofire (4.7.3)
   - CocoaLumberjack/Default (3.3.0)
   - CocoaLumberjack/Swift (3.3.0):
     - CocoaLumberjack/Default
   - IDZSwiftCommonCrypto (0.10.0)
   - InputMask (3.0.0)
   - KeychainAccess (3.1.0)
-  - LeadKit (0.6.5):
-    - LeadKit/Core (= 0.6.5)
-  - LeadKit/Core (0.6.5):
+  - LeadKit (0.6.7):
+    - LeadKit/Core (= 0.6.7)
+  - LeadKit/Core (0.6.7):
     - CocoaLumberjack/Swift (~> 3.3.0)
     - ObjectMapper (~> 3.0.0)
     - RxAlamofire (= 4.0.0)
@@ -16,12 +16,6 @@ PODS:
     - RxSwift (= 4.0.0)
     - TableKit (~> 2.5.0)
     - UIScrollView-InfiniteScroll (~> 1.0.0)
-  - LeadKit/Core-iOS-Extension (0.6.5):
-    - CocoaLumberjack/Swift (~> 3.3.0)
-    - ObjectMapper (~> 3.0.0)
-    - RxAlamofire (= 4.0.0)
-    - RxCocoa (= 4.0.0)
-    - RxSwift (= 4.0.0)
   - ObjectMapper (3.0.0)
   - RxAlamofire (4.0.0):
     - RxAlamofire/Core (= 4.0.0)
@@ -39,17 +33,42 @@ DEPENDENCIES:
   - IDZSwiftCommonCrypto
   - InputMask (= 3.0.0)
   - KeychainAccess (= 3.1.0)
-  - LeadKit (~> 0.6.0)
-  - LeadKit/Core-iOS-Extension (~> 0.6.0)
+  - LeadKit (from `https://github.com/procommerz/LeadKit`, branch `farmyBranchXcode10`)
   - SwiftValidator (= 5.0.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CocoaLumberjack
+    - IDZSwiftCommonCrypto
+    - InputMask
+    - KeychainAccess
+    - ObjectMapper
+    - RxAlamofire
+    - RxCocoa
+    - RxSwift
+    - TableKit
+    - UIScrollView-InfiniteScroll
+  https://github.com/TouchInstinct/Podspecs.git:
+    - SwiftValidator
+
+EXTERNAL SOURCES:
+  LeadKit:
+    :branch: farmyBranchXcode10
+    :git: https://github.com/procommerz/LeadKit
+
+CHECKOUT OPTIONS:
+  LeadKit:
+    :commit: 3e1f059a7a2b17a9822edb36bd8bb70d927ee523
+    :git: https://github.com/procommerz/LeadKit
+
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
   IDZSwiftCommonCrypto: 4eef2c46e262dfbcbc1fd76365e066336680ad7d
-  InputMask: 37c273bde6705187d80cf0b4240cb42ea92096c3
+  InputMask: 8b5c42acac19cd48fe664b739f30995103b75e75
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
-  LeadKit: 583c724f25852e40eebad8af5a945e101c282fde
+  LeadKit: 55cb5847601ca9b1f2d10739b16e3320d76b8a2e
   ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
   RxAlamofire: 6ea579ac53bf14cb4bc7049a3866e5a769989b1d
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
@@ -58,6 +77,6 @@ SPEC CHECKSUMS:
   TableKit: 42d4dff2944f273cdeec2ef6352064eb6a9a355b
   UIScrollView-InfiniteScroll: c132d6d5851daff229ab4a1060ccf70a05a051c9
 
-PODFILE CHECKSUM: 9ba64f509b50aaf860b0df0c12cca7969aa50842
+PODFILE CHECKSUM: fb853e7d9226ce5389bebe88435801879332cce7
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

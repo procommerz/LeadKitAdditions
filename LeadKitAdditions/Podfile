@@ -10,7 +10,7 @@ abstract_target 'LeadKitAdditions' do
   inhibit_all_warnings!
 
   target 'LeadKitAdditions iOS' do
-    platform :ios, '9.0'
+    platform :ios, '12.0'
 
     use_frameworks!
 
@@ -18,7 +18,7 @@ abstract_target 'LeadKitAdditions' do
   end
 
   target 'LeadKitAdditions iOS Extensions' do
-    platform :ios, '9.0'
+    platform :ios, '12.0'
 
     use_frameworks!
 

@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
     ss.dependency "LeadKit", '10.0.0'
     ss.dependency "KeychainAccess", '3.1.0'
-    ss.dependency "IDZSwiftCommonCrypto", '0.11.0'
+    ss.dependency "IDZSwiftCommonCrypto", '0.11.3'
     ss.dependency "InputMask", '3.0.0'
     ss.dependency "SwiftValidator", '4.0.2'
   end

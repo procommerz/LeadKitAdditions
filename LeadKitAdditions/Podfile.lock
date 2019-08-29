@@ -25,7 +25,7 @@ PODS:
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
-  - SwiftValidator (4.0.0)
+  - SwiftValidator (4.0.2)
   - TableKit (2.5.0)
   - UIScrollView-InfiniteScroll (1.0.2)
 
@@ -34,7 +34,7 @@ DEPENDENCIES:
   - InputMask (= 3.0.0)
   - KeychainAccess (= 3.1.0)
   - LeadKit (from `https://github.com/procommerz/LeadKit`, branch `farmyBranchXcode10`)
-  - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`)
+  - SwiftValidator
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -49,21 +49,18 @@ SPEC REPOS:
     - RxSwift
     - TableKit
     - UIScrollView-InfiniteScroll
+  https://github.com/TouchInstinct/Podspecs.git:
+    - SwiftValidator
 
 EXTERNAL SOURCES:
   LeadKit:
     :branch: farmyBranchXcode10
     :git: https://github.com/procommerz/LeadKit
-  SwiftValidator:
-    :git: https://github.com/jpotts18/SwiftValidator.git
 
 CHECKOUT OPTIONS:
   LeadKit:
     :commit: 42896331f07206d21489b55a625727fe350886ed
     :git: https://github.com/procommerz/LeadKit
-  SwiftValidator:
-    :commit: 2d03c5479e611386fbdf523209c64d2dd09ebd26
-    :git: https://github.com/jpotts18/SwiftValidator.git
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
@@ -76,10 +73,10 @@ SPEC CHECKSUMS:
   RxAlamofire: 6ea579ac53bf14cb4bc7049a3866e5a769989b1d
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
-  SwiftValidator: 249b6b3ae3b294266c5b9de134d94f18f2d5aa47
+  SwiftValidator: 8517a67bceebd7286cb487da259db7dd44c5fc74
   TableKit: 42d4dff2944f273cdeec2ef6352064eb6a9a355b
   UIScrollView-InfiniteScroll: c132d6d5851daff229ab4a1060ccf70a05a051c9
 
-PODFILE CHECKSUM: 00f295d9e2bbd4025dcaa10bd0231de13a648bd7
+PODFILE CHECKSUM: 6218e1cf0928773fc55c8228ffad7b5abd967258
 
 COCOAPODS: 1.8.0.beta.2

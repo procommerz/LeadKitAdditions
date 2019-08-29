@@ -5,7 +5,7 @@ abstract_target 'LeadKitAdditions' do
   pod 'KeychainAccess', '3.1.0'
   pod 'IDZSwiftCommonCrypto'
   pod "InputMask", '3.0.0'
-  pod "SwiftValidator", :git => 'https://github.com/jpotts18/SwiftValidator.git'
+  pod "SwiftValidator"
 
   inhibit_all_warnings!
 

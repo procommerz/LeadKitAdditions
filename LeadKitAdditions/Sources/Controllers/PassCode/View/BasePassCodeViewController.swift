@@ -88,7 +88,7 @@ open class BasePassCodeViewController: UIViewController {
             return
         }
 
-        NotificationCenter.default.rx.notification(.UIApplicationWillResignActive)
+        NotificationCenter.default.rx.notification(UIApplication.willResignActiveNotification)
             .subscribe(onNext: { [weak self] _ in
                 self?.resetUI()
             })
@@ -116,7 +116,7 @@ open class BasePassCodeViewController: UIViewController {
     fileprivate func resetDotsUI() {
         fakeTextField.text = nil
         dotStackView.arrangedSubviews
-            .flatMap { $0 as? UIImageView }
+            .compactMap { $0 as? UIImageView }
             .forEach { $0.image = self.imageFor(type: .clear) }
     }
 
@@ -133,7 +133,7 @@ open class BasePassCodeViewController: UIViewController {
         var statesArray: [PinImageType] = []
 
         for characterIndex in 0..<viewModel.passCodeConfiguration.passCodeCharactersNumber {
-            let state: PinImageType = Int(characterIndex) <= passCodeText.characters.count - 1 ? .entered : .clear
+            let state: PinImageType = Int(characterIndex) <= passCodeText.count - 1 ? .entered : .clear
             statesArray.append(state)
         }
 

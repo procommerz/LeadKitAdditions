@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source          = { :git => "https://github.com/procommerz/LeadKitAdditions", :tag => s.version }
 
   s.subspec 'Core' do |ss|
-    ss.ios.deployment_target = '9.0'
+    ss.ios.deployment_target = '12.0'
     ss.source_files = "LeadKitAdditions/Sources/**/*.swift"
 
     ss.exclude_files = [
@@ -18,13 +18,13 @@ Pod::Spec.new do |s|
 
     ss.dependency "LeadKit", '10.0.0'
     ss.dependency "KeychainAccess", '3.1.0'
-    ss.dependency "IDZSwiftCommonCrypto", '0.11.3'
+    ss.dependency "IDZSwiftCommonCrypto", '0.13.0'
     ss.dependency "InputMask", '3.0.0'
     ss.dependency "SwiftValidator", '4.0.2'
   end
 
   s.subspec 'Core-iOS-Extension' do |ss|
-    ss.platform = :ios, '9.0'
+    ss.platform = :ios, '12.0'
     ss.source_files = "LeadKitAdditions/Sources/**/*.swift"
 
     ss.exclude_files = [
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 
     ss.dependency "LeadKit/Core-iOS-Extension", '10.0.0'
     ss.dependency "KeychainAccess", '3.1.0'
-    ss.dependency "IDZSwiftCommonCrypto", '0.11.3'
+    ss.dependency "IDZSwiftCommonCrypto", '0.13.0'
     ss.dependency "InputMask", '3.0.0'
     ss.dependency "SwiftValidator", '4.0.2'
   end

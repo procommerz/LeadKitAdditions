@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage        = "https://github.com/TouchInstinct/LeadKitAdditions"
   s.license         = "Apache License, Version 2.0"
   s.author          = "Procommerz"
-  s.platform        = :ios, "9.0"
+  s.platform        = :ios, "12.0"
   s.source          = { :git => "https://github.com/procommerz/LeadKitAdditions", :tag => s.version }
 
   s.subspec 'Core' do |ss|

@@ -21,14 +21,14 @@ extension CellFieldJumpingProtocol {
 
     func bind(for textField: UITextField, to disposeBag: DisposeBag) {
         shouldResignFirstResponder.asObservable()
-            .observeOn(MainScheduler.instance)
+            .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak textField] _ in
                 textField?.resignFirstResponder()
             })
             .disposed(by: disposeBag)
 
         shouldBecomeFirstResponder.asObservable()
-            .observeOn(MainScheduler.instance)
+            .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak textField] _ in
                 textField?.becomeFirstResponder()
             })

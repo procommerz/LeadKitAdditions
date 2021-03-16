@@ -92,8 +92,8 @@ extension Observable {
      - Returns:
        - observable, that handles LoadingBarButton behaviour
      */
-    public func changeLoadingUI(using barButton: LoadingBarButton) -> Observable<Observable.E> {
-        return observeOn(MainScheduler.instance)
+    public func changeLoadingUI(using barButton: LoadingBarButton) -> Observable<Observable.Element> {
+        return observe(on: MainScheduler.instance)
             .do(onSubscribe: {
                 barButton.setState(waiting: true)
             }, onDispose: {

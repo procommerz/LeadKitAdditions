@@ -1,9 +1,10 @@
 import UIKit
 import RxSwift
+import RxCocoa
 
 class CellTextFieldViewModel: CellFieldJumpingProtocol {
 
-    private let text: Variable<String?>
+    private let text: BehaviorRelay<String?>
 
     let placeholder: String
 
@@ -23,7 +24,7 @@ class CellTextFieldViewModel: CellFieldJumpingProtocol {
     var isActive: Bool = true
 
     init(initialText: String = "", placeholder: String = "", textFieldSettingsBlock: ItemSettingsBlock<UITextField>? = nil) {
-        text = Variable(initialText)
+        text = BehaviorRelay(value: initialText)
         self.placeholder = placeholder
         self.textFieldSettingsBlock = textFieldSettingsBlock
     }
@@ -35,7 +36,7 @@ class CellTextFieldViewModel: CellFieldJumpingProtocol {
     }
 
     func setTextValue(_ value: String?) {
-        text.value = value
+        text.accept(value)
     }
 
 }

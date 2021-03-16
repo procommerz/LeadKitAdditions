@@ -26,7 +26,7 @@ import LeadKit
 extension DefaultNetworkService {
 
     func activityIndicatorBinding() -> Disposable? {
-        return bindActivityIndicator()
+        return nil//bindActivityIndicator()
     }
 
 }

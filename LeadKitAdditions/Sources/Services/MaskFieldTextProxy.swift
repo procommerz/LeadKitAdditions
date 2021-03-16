@@ -6,9 +6,9 @@ class MaskFieldTextProxy: NSObject {
 
     private var disposeBag = DisposeBag()
 
-    fileprivate let text = Variable("")
+    fileprivate let text = BehaviorRelay(value: "")
 
-    fileprivate let isCompleteHolder = Variable(false)
+    fileprivate let isCompleteHolder = BehaviorRelay(value: false)
     var isComplete: Bool {
         return isCompleteHolder.value
     }
@@ -53,8 +53,8 @@ class MaskFieldTextProxy: NSObject {
 extension MaskFieldTextProxy: MaskedTextFieldDelegateListener {
 
     func textField(_ textField: UITextField, didFillMandatoryCharacters complete: Bool, didExtractValue value: String) {
-        text.value = value
-        isCompleteHolder.value = complete
+        text.accept(value)
+        isCompleteHolder.accept(complete)
     }
 
 }

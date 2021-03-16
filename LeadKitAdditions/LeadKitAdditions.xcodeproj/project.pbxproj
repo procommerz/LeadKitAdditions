@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A08E37F1F2A13BF00F9AB62 /* CellTextFieldToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A08E37E1F2A13BF00F9AB62 /* CellTextFieldToolBar.swift */; };
-		248389A288C0A6D7914F0546 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED4A1B793EAA73C9E95969F /* Pods_LeadKitAdditions_LeadKitAdditions_iOS.framework */; };
+		9EFCF44B42B60F528C5BA1B7 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS_Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF219F577C5FF899D224002 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS_Extensions.framework */; };
+		A46F610BC4C68D290264B818 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491A237FAF0CBB0A8FBB7A24 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS.framework */; };
 		A6CFB8D91F5024A500A42CC2 /* Error+NetworkingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CFB8D81F5024A500A42CC2 /* Error+NetworkingExtensions.swift */; };
-		B326804BA6CC8B8BB136A46A /* Pods_LeadKitAdditions_LeadKitAdditions_iOS_Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD5627139CAB27705F75C07 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS_Extensions.framework */; };
 		CAE698E81E968820000394B0 /* LeadKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE698E61E968820000394B0 /* LeadKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED0C34031F2906EC00FAE9FD /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0C33D31F2906EC00FAE9FD /* ApiResponse.swift */; };
 		ED0C34041F2906EC00FAE9FD /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0C33D31F2906EC00FAE9FD /* ApiResponse.swift */; };
@@ -83,17 +83,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		01605ECA03749D49C27FA3DD /* Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions/Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.release.xcconfig"; sourceTree = "<group>"; };
 		0A08E37E1F2A13BF00F9AB62 /* CellTextFieldToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTextFieldToolBar.swift; sourceTree = "<group>"; };
-		0ED4A1B793EAA73C9E95969F /* Pods_LeadKitAdditions_LeadKitAdditions_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeadKitAdditions_LeadKitAdditions_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		49738551AC648B0AFA74E57F /* Pods-LeadKitAdditions-LeadKitAdditions iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeadKitAdditions-LeadKitAdditions iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeadKitAdditions-LeadKitAdditions iOS/Pods-LeadKitAdditions-LeadKitAdditions iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		7B7F57C5E5275C4D8DC71992 /* Pods_LeadKitAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeadKitAdditions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D549FA5A7579702358E07DF /* Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions/Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.debug.xcconfig"; sourceTree = "<group>"; };
+		1DB517FEAE57C99ED4FABCB3 /* Pods-LeadKitAdditions-LeadKitAdditions iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeadKitAdditions-LeadKitAdditions iOS.release.xcconfig"; path = "Target Support Files/Pods-LeadKitAdditions-LeadKitAdditions iOS/Pods-LeadKitAdditions-LeadKitAdditions iOS.release.xcconfig"; sourceTree = "<group>"; };
+		1F1CCE85F714F569D33EBC68 /* Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.debug.xcconfig"; path = "Target Support Files/Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions/Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.debug.xcconfig"; sourceTree = "<group>"; };
+		491A237FAF0CBB0A8FBB7A24 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeadKitAdditions_LeadKitAdditions_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF219F577C5FF899D224002 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS_Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeadKitAdditions_LeadKitAdditions_iOS_Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EEF99A5190A156C24FEEDF0 /* Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.release.xcconfig"; path = "Target Support Files/Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions/Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.release.xcconfig"; sourceTree = "<group>"; };
+		7A50F178CBDEDCCF9602AC06 /* Pods-LeadKitAdditions-LeadKitAdditions iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeadKitAdditions-LeadKitAdditions iOS.debug.xcconfig"; path = "Target Support Files/Pods-LeadKitAdditions-LeadKitAdditions iOS/Pods-LeadKitAdditions-LeadKitAdditions iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A6CFB8D81F5024A500A42CC2 /* Error+NetworkingExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+NetworkingExtensions.swift"; sourceTree = "<group>"; };
 		CAE698E31E968820000394B0 /* LeadKitAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeadKitAdditions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE698E61E968820000394B0 /* LeadKitAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeadKitAdditions.h; sourceTree = "<group>"; };
-		CFD5627139CAB27705F75C07 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS_Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeadKitAdditions_LeadKitAdditions_iOS_Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0AB283D10B2175EFDBF7924 /* Pods-LeadKitAdditions-LeadKitAdditions iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeadKitAdditions-LeadKitAdditions iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeadKitAdditions-LeadKitAdditions iOS/Pods-LeadKitAdditions-LeadKitAdditions iOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED0C33D31F2906EC00FAE9FD /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		ED0C33D41F2906EC00FAE9FD /* BaseDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDateFormatter.swift; sourceTree = "<group>"; };
 		ED0C33D51F2906EC00FAE9FD /* LoadingBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingBarButton.swift; sourceTree = "<group>"; };
@@ -138,7 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				248389A288C0A6D7914F0546 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS.framework in Frameworks */,
+				A46F610BC4C68D290264B818 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,19 +145,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B326804BA6CC8B8BB136A46A /* Pods_LeadKitAdditions_LeadKitAdditions_iOS_Extensions.framework in Frameworks */,
+				9EFCF44B42B60F528C5BA1B7 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS_Extensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A3117951840B8B7D2E7A8A80 /* Frameworks */ = {
+		7494D6A1B2DAB9A33D0CFAE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7B7F57C5E5275C4D8DC71992 /* Pods_LeadKitAdditions.framework */,
-				0ED4A1B793EAA73C9E95969F /* Pods_LeadKitAdditions_LeadKitAdditions_iOS.framework */,
-				CFD5627139CAB27705F75C07 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS_Extensions.framework */,
+				491A237FAF0CBB0A8FBB7A24 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS.framework */,
+				4DF219F577C5FF899D224002 /* Pods_LeadKitAdditions_LeadKitAdditions_iOS_Extensions.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,10 +164,10 @@
 		CAE698D91E968820000394B0 = {
 			isa = PBXGroup;
 			children = (
-				A3117951840B8B7D2E7A8A80 /* Frameworks */,
-				F8A65FEC7C0EB4B93746E50F /* Pods */,
 				CAE698E41E968820000394B0 /* Products */,
 				CAE698E51E968820000394B0 /* Sources */,
+				D55D8510F7A34BEB43B48BBE /* Pods */,
+				7494D6A1B2DAB9A33D0CFAE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +195,18 @@
 				CAE698E61E968820000394B0 /* LeadKitAdditions.h */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		D55D8510F7A34BEB43B48BBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A50F178CBDEDCCF9602AC06 /* Pods-LeadKitAdditions-LeadKitAdditions iOS.debug.xcconfig */,
+				1DB517FEAE57C99ED4FABCB3 /* Pods-LeadKitAdditions-LeadKitAdditions iOS.release.xcconfig */,
+				1F1CCE85F714F569D33EBC68 /* Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.debug.xcconfig */,
+				4EEF99A5190A156C24FEEDF0 /* Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		ED0C33D21F2906EC00FAE9FD /* Classes */ = {
@@ -340,17 +350,6 @@
 			path = CellTextField;
 			sourceTree = "<group>";
 		};
-		F8A65FEC7C0EB4B93746E50F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				49738551AC648B0AFA74E57F /* Pods-LeadKitAdditions-LeadKitAdditions iOS.debug.xcconfig */,
-				D0AB283D10B2175EFDBF7924 /* Pods-LeadKitAdditions-LeadKitAdditions iOS.release.xcconfig */,
-				9D549FA5A7579702358E07DF /* Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.debug.xcconfig */,
-				01605ECA03749D49C27FA3DD /* Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -377,7 +376,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAE698EB1E968820000394B0 /* Build configuration list for PBXNativeTarget "LeadKitAdditions iOS" */;
 			buildPhases = (
-				E8E82E34792B38EF225575D7 /* [CP] Check Pods Manifest.lock */,
+				E2D0E346BECB153DEE1D32E5 /* [CP] Check Pods Manifest.lock */,
 				CAE698DE1E968820000394B0 /* Sources */,
 				CAE698DF1E968820000394B0 /* Frameworks */,
 				CAE698E01E968820000394B0 /* Headers */,
@@ -397,7 +396,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFBD55751EBB87100062AA63 /* Build configuration list for PBXNativeTarget "LeadKitAdditions iOS Extensions" */;
 			buildPhases = (
-				1C200FD9213D2207669C4304 /* [CP] Check Pods Manifest.lock */,
+				71EA9BF6F1C1CBAE2CCEAC15 /* [CP] Check Pods Manifest.lock */,
 				EFBD556B1EBB87100062AA63 /* Sources */,
 				EFBD556C1EBB87100062AA63 /* Frameworks */,
 				EFBD556D1EBB87100062AA63 /* Headers */,
@@ -470,16 +469,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C200FD9213D2207669C4304 /* [CP] Check Pods Manifest.lock */ = {
+		71EA9BF6F1C1CBAE2CCEAC15 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions-checkManifestLockResult.txt",
 			);
@@ -502,16 +505,20 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
-		E8E82E34792B38EF225575D7 /* [CP] Check Pods Manifest.lock */ = {
+		E2D0E346BECB153DEE1D32E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LeadKitAdditions-LeadKitAdditions iOS-checkManifestLockResult.txt",
 			);
@@ -671,7 +678,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -726,7 +733,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -740,7 +747,7 @@
 		};
 		CAE698EC1E968820000394B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49738551AC648B0AFA74E57F /* Pods-LeadKitAdditions-LeadKitAdditions iOS.debug.xcconfig */;
+			baseConfigurationReference = 7A50F178CBDEDCCF9602AC06 /* Pods-LeadKitAdditions-LeadKitAdditions iOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -752,7 +759,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "touchinstinct.LeadKitAdditions-iOS";
 				PRODUCT_NAME = LeadKitAdditions;
@@ -765,7 +772,7 @@
 		};
 		CAE698ED1E968820000394B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0AB283D10B2175EFDBF7924 /* Pods-LeadKitAdditions-LeadKitAdditions iOS.release.xcconfig */;
+			baseConfigurationReference = 1DB517FEAE57C99ED4FABCB3 /* Pods-LeadKitAdditions-LeadKitAdditions iOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -777,7 +784,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "touchinstinct.LeadKitAdditions-iOS";
 				PRODUCT_NAME = LeadKitAdditions;
@@ -789,7 +796,7 @@
 		};
 		EFBD55761EBB87100062AA63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D549FA5A7579702358E07DF /* Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.debug.xcconfig */;
+			baseConfigurationReference = 1F1CCE85F714F569D33EBC68 /* Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -800,7 +807,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info-iOS-Extensions.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "touchinstinct.LeadKitAdditions-iOS-Extensions";
 				PRODUCT_NAME = LeadKitAdditions;
@@ -813,7 +820,7 @@
 		};
 		EFBD55771EBB87100062AA63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01605ECA03749D49C27FA3DD /* Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.release.xcconfig */;
+			baseConfigurationReference = 4EEF99A5190A156C24FEEDF0 /* Pods-LeadKitAdditions-LeadKitAdditions iOS Extensions.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -824,7 +831,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info-iOS-Extensions.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "touchinstinct.LeadKitAdditions-iOS-Extensions";
 				PRODUCT_NAME = LeadKitAdditions;

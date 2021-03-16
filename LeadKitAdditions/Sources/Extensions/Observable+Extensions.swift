@@ -40,10 +40,10 @@ public extension Observable {
     /// - Returns: An observable sequence producing the elements of the given sequence repeatedly
     /// until it terminates successfully or is notified to error or complete.
     func retry(retryLimit: UInt = DefaultNetworkService.retryLimit,
-               canRetryClosure: @escaping CanRetryClosure) -> Observable<Observable.E> {
+               canRetryClosure: @escaping CanRetryClosure) -> Observable<Observable.Element> {
 
-            return observeOn(CurrentThreadScheduler.instance)
-                .retryWhen { errorsObservable -> Observable<Observable.E> in
+        return observe(on: CurrentThreadScheduler.instance)
+                .retry { errorsObservable -> Observable<Observable.Element> in
                     return errorsObservable.enumerated().flatMap {
                         (canRetryClosure($1) && $0 < retryLimit - 1) ? self : .error($1)
                     }
@@ -58,10 +58,10 @@ public extension Observable {
         - handler: block, that executes, when error occured
      */
     func handleApiError<T: ApiErrorProtocol>(_ apiErrorType: T,
-                                             handler: @escaping () -> Void) -> Observable<Observable.E>
+                                             handler: @escaping () -> Void) -> Observable<Observable.Element>
         where T.RawValue == Int {
 
-        return observeOn(CurrentThreadScheduler.instance)
+        return observe(on: CurrentThreadScheduler.instance)
             .do(onError: { error in
                 if error.isApiError(apiErrorType) {
                     handler()
@@ -74,8 +74,8 @@ public extension Observable {
      
       - parameter isLoading: subject, request state bind to
      */
-    func changeLoadingBehaviour(isLoading: PublishSubject<Bool>) -> Observable<Observable.E> {
-        return observeOn(CurrentThreadScheduler.instance)
+    func changeLoadingBehaviour(isLoading: PublishSubject<Bool>) -> Observable<Observable.Element> {
+        return observe(on: CurrentThreadScheduler.instance)
             .do(onNext: { _ in
                 isLoading.onNext(false)
             }, onError: { _ in

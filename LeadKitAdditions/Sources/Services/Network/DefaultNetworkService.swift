@@ -45,10 +45,10 @@ open class DefaultNetworkService: NetworkService {
 
     /// The default acceptable range 200…299
     open class var acceptableStatusCodes: [Int] {
-        return Alamofire.SessionManager.defaultAcceptableStatusCodes + [422, 500]
+        return Alamofire.Session.defaultAcceptableStatusCodes + [422, 500]
     }
 
-    public init(sessionManager: SessionManager) {
+    public init(sessionManager: Session) {
         super.init(sessionManager: sessionManager, acceptableStatusCodes: DefaultNetworkService.acceptableStatusCodes)
 
         // Fatal error: `drive*` family of methods can be only called from `MainThread`
@@ -60,10 +60,8 @@ open class DefaultNetworkService: NetworkService {
     // MARK: - Default Values
 
     /// Override to change server trust policies
-    open class var serverTrustPolicies: [String: ServerTrustPolicy] {
-        return [
-            baseUrl: .disableEvaluation
-        ]
+    open class var serverTrustManager: ServerTrustManager {
+        ServerTrustManager(evaluators: [baseUrl: DisabledTrustEvaluator()])
     }
 
     /// Override to change default urlSession configuration
@@ -75,9 +73,9 @@ open class DefaultNetworkService: NetworkService {
     }
 
     /// Override to configure alamofire session manager
-    open class var sessionManager: SessionManager {
-        let sessionManager = SessionManager(configuration: configuration,
-                                            serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies))
+    open class var sessionManager: Session {
+        let sessionManager = Session(configuration: configuration,
+                                     serverTrustManager: serverTrustManager)
         return sessionManager
     }
 

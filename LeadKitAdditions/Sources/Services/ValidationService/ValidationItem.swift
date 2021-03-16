@@ -35,7 +35,7 @@ public final class ValidationItem {
 
     private let disposeBag = DisposeBag()
 
-    private let validationStateHolder = Variable<ValidationItemState>(.initial)
+    private let validationStateHolder = BehaviorRelay<ValidationItemState>(value: .initial)
     public var validationState: ValidationItemState {
         return validationStateHolder.value
     }
@@ -43,7 +43,7 @@ public final class ValidationItem {
         return validationStateHolder.asObservable()
     }
 
-    private let text = Variable<String?>(nil)
+    private let text = BehaviorRelay<String?>(value: nil)
 
     private(set) var rules: [Rule] = []
 
@@ -88,12 +88,12 @@ public final class ValidationItem {
                  .correction where !isManual,
                  .valid where !isManual:
 
-                validationStateHolder.value = .correction(validationError)
+                validationStateHolder.accept(.correction(validationError))
             default:
-                validationStateHolder.value = .error(validationError)
+                validationStateHolder.accept(.error(validationError))
             }
         } else {
-            validationStateHolder.value = .valid
+            validationStateHolder.accept(.valid)
         }
     }
 

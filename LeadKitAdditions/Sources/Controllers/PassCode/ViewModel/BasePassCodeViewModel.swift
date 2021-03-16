@@ -42,17 +42,17 @@ open class BasePassCodeViewModel: BaseViewModel {
     /// Contains configuration for pass code operations
     public let passCodeConfiguration: PassCodeConfiguration
 
-    fileprivate let validationResultHolder = Variable<PassCodeValidationResult?>(nil)
+    fileprivate let validationResultHolder = BehaviorRelay<PassCodeValidationResult?>(value: nil)
     var validationResult: Driver<PassCodeValidationResult?> {
         return validationResultHolder.asDriver()
     }
 
-    fileprivate let passCodeControllerStateHolder = Variable<PassCodeControllerState>(.enter)
+    fileprivate let passCodeControllerStateHolder = BehaviorRelay<PassCodeControllerState>(value: .enter)
     public var passCodeControllerState: Driver<PassCodeControllerState> {
         return passCodeControllerStateHolder.asDriver()
     }
 
-    private let passCodeText = Variable<String?>(nil)
+    private let passCodeText = BehaviorRelay<String?>(value: nil)
 
     fileprivate var attemptsNumber = 0
 
@@ -95,13 +95,13 @@ open class BasePassCodeViewModel: BaseViewModel {
 
                         sSelf.authSucceed(.passCode(passCode))
                     } else {
-                        sSelf.passCodeControllerStateHolder.value = sSelf.passCodeHolder.enterStep
+                        sSelf.passCodeControllerStateHolder.accept(sSelf.passCodeHolder.enterStep)
                     }
                 } else {
                     if validationResult?.isValid ?? false, let passCode = validationResult?.passCode {
                         sSelf.authSucceed(.passCode(passCode))
                     } else {
-                        sSelf.passCodeControllerStateHolder.value = sSelf.passCodeHolder.enterStep
+                        sSelf.passCodeControllerStateHolder.accept(sSelf.passCodeHolder.enterStep)
                     }
                 }
             })
@@ -115,13 +115,13 @@ open class BasePassCodeViewModel: BaseViewModel {
     }
 
     public func setPassCodeText(_ value: String?) {
-        passCodeText.value = value
+        passCodeText.accept(value)
     }
 
     public func reset() {
-        passCodeText.value = nil
-        validationResultHolder.value = nil
-        passCodeControllerStateHolder.value = controllerType == .change ? .oldEnter : .enter
+        passCodeText.accept(nil)
+        validationResultHolder.accept(nil)
+        passCodeControllerStateHolder.accept(controllerType == .change ? .oldEnter : .enter)
         attemptsNumber = 0
         passCodeHolder.reset()
     }
@@ -160,7 +160,7 @@ extension BasePassCodeViewModel {
         validateIfNeeded()
 
         if shouldUpdateControllerState {
-            passCodeControllerStateHolder.value = passCodeHolder.enterStep
+            passCodeControllerStateHolder.accept(passCodeHolder.enterStep)
         }
     }
 
@@ -194,7 +194,7 @@ extension BasePassCodeViewModel {
             passCodeHolder.reset()
         }
 
-        validationResultHolder.value = validationResult
+        validationResultHolder.accept(validationResult)
     }
 
 }

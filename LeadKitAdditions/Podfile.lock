@@ -1,39 +1,42 @@
 PODS:
-  - Alamofire (4.9.0)
-  - CocoaLumberjack/Default (3.3.0)
-  - CocoaLumberjack/Swift (3.3.0):
-    - CocoaLumberjack/Default
+  - Alamofire (5.4.1)
+  - CocoaLumberjack/Core (3.7.0)
+  - CocoaLumberjack/Swift (3.7.0):
+    - CocoaLumberjack/Core
   - IDZSwiftCommonCrypto (0.13.0)
   - InputMask (3.0.0)
   - KeychainAccess (3.1.0)
-  - LeadKit (10.0.0):
-    - LeadKit/Core (= 10.0.0)
-  - LeadKit/Core (10.0.0):
-    - CocoaLumberjack/Swift (~> 3.3.0)
+  - LeadKit (11.0.0):
+    - LeadKit/Core (= 11.0.0)
+  - LeadKit/Core (11.0.0):
+    - CocoaLumberjack/Swift (= 3.7.0)
     - ObjectMapper
-    - RxAlamofire (= 4.0.0)
-    - RxCocoa (= 4.0.0)
-    - RxSwift (= 4.0.0)
-    - TableKit (~> 2.5.0)
-    - UIScrollView-InfiniteScroll (~> 1.0.0)
-  - ObjectMapper (3.5.1)
-  - RxAlamofire (4.0.0):
-    - RxAlamofire/Core (= 4.0.0)
-  - RxAlamofire/Core (4.0.0):
-    - Alamofire (~> 4.5)
-    - RxSwift (~> 4.0)
-  - RxCocoa (4.0.0):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.0.0)
+    - RxAlamofire (= 6.1.1)
+    - RxCocoa (= 6.1.0)
+    - RxSwift (= 6.1.0)
+    - TableKit (= 2.11.0)
+    - UIScrollView-InfiniteScroll (~> 1.1.0)
+  - ObjectMapper (4.2.0)
+  - RxAlamofire (6.1.1):
+    - RxAlamofire/Core (= 6.1.1)
+  - RxAlamofire/Core (6.1.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
   - SwiftValidator (4.0.2)
-  - TableKit (2.5.0)
-  - UIScrollView-InfiniteScroll (1.0.2)
+  - TableKit (2.11.0)
+  - UIScrollView-InfiniteScroll (1.1.0)
 
 DEPENDENCIES:
   - IDZSwiftCommonCrypto
   - InputMask (= 3.0.0)
   - KeychainAccess (= 3.1.0)
-  - LeadKit (from `https://github.com/procommerz/LeadKit`, branch `farmyBranchXcode10`)
+  - LeadKit (from `https://github.com/procommerz/LeadKit`, branch `farmyBranch2021`)
   - SwiftValidator (= 4.0.2)
 
 SPEC REPOS:
@@ -46,6 +49,7 @@ SPEC REPOS:
     - ObjectMapper
     - RxAlamofire
     - RxCocoa
+    - RxRelay
     - RxSwift
     - TableKit
     - UIScrollView-InfiniteScroll
@@ -54,29 +58,30 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   LeadKit:
-    :branch: farmyBranchXcode10
+    :branch: farmyBranch2021
     :git: https://github.com/procommerz/LeadKit
 
 CHECKOUT OPTIONS:
   LeadKit:
-    :commit: c57768cfc3b022a0c20c1014fae03d5fc8dd1738
+    :commit: 49f3c8405502745a79134160aebb8d4baa5914b5
     :git: https://github.com/procommerz/LeadKit
 
 SPEC CHECKSUMS:
-  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
-  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
   IDZSwiftCommonCrypto: 00dd37cdfbd149312a7e5a582cf9909f8b129f44
   InputMask: 8b5c42acac19cd48fe664b739f30995103b75e75
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
-  LeadKit: 0cd2945f55cdd19977d2b167beb23454169f9269
-  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
-  RxAlamofire: 6ea579ac53bf14cb4bc7049a3866e5a769989b1d
-  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
-  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  LeadKit: 3820ea04f04706729a44e8b9af7dd0794dd31a9e
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
   SwiftValidator: 8517a67bceebd7286cb487da259db7dd44c5fc74
-  TableKit: 42d4dff2944f273cdeec2ef6352064eb6a9a355b
-  UIScrollView-InfiniteScroll: c132d6d5851daff229ab4a1060ccf70a05a051c9
+  TableKit: 8a1a267d841a2da638ea09bdb0db33aedb459fa8
+  UIScrollView-InfiniteScroll: 3ef456bcbe759c19f510a383cff96e6647c98c98
 
-PODFILE CHECKSUM: ae62399a098c034267a94c53a57c0132fcdd26ce
+PODFILE CHECKSUM: a7909ae40359402cd8d49022e0931ae317120620
 
-COCOAPODS: 1.8.0.beta.2
+COCOAPODS: 1.10.1

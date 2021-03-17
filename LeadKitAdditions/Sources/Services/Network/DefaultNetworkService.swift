@@ -61,7 +61,7 @@ open class DefaultNetworkService: NetworkService {
 
     /// Override to change server trust policies
     open class var serverTrustManager: ServerTrustManager {
-        ServerTrustManager(evaluators: [baseUrl: DisabledTrustEvaluator()])
+        ServerTrustManager(allHostsMustBeEvaluated: false, evaluators: [baseUrl: DisabledTrustEvaluator()])
     }
 
     /// Override to change default urlSession configuration
